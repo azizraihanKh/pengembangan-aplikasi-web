@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #263238;
+    background-color: #f5f7fa;
+}
+
+/* Navbar */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e3e8ef;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: 70px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav > p {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #52606d;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+/* Area utama */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+
+section {
+    background-color: #ffffff;
+    border: 1px solid #e5eaf0;
+    border-radius: 16px;
+    padding: 35px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 20px rgba(30, 41, 59, 0.06);
+}
+
+section h2 {
+    margin-bottom: 8px;
+    font-size: 1.7rem;
+    color: #1f2937;
+}
+
+/* Tentang Saya */
+#tentang-saya {
+    padding: 40px;
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.profil img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 24px;
+    border: 4px solid #dbeafe;
+    flex-shrink: 0;
+}
+
+.profil-info {
+    flex: 1;
+}
+
+.profil-info h1 {
+    margin-bottom: 14px;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    color: #111827;
+}
+
+.profil-info p {
+    color: #667085;
+    max-width: 650px;
+}
+
+/* Biodata */
+.biodata-list {
+    margin-top: 22px;
+    overflow: hidden;
+    border: 1px solid #e1e7ef;
+    border-radius: 12px;
+    background-color: #f8fafc;
+}
+
+.biodata-list p {
+    min-height: 48px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    align-items: center;
+    border-bottom: 1px solid #e1e7ef;
+    color: #667085;
+}
+
+.biodata-list p:last-child {
+    border-bottom: none;
+}
+
+.biodata-list p strong {
+    color: #1f2937;
+    font-weight: 700;
+}
+
+/* Pendidikan */
+.pendidikan-list {
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.pendidikan-list article {
+    padding: 24px;
+    border: 1px solid #e1e7ef;
+    border-radius: 12px;
+    background-color: #f8fafc;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pendidikan-list article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(30, 41, 59, 0.08);
+}
+
+.pendidikan-list h3 {
+    margin-bottom: 8px;
+    color: #2563eb;
+    font-size: 1.05rem;
+}
+
+.pendidikan-list p {
+    color: #667085;
+}
+
+/* Tabel mata kuliah */
+#mata-kuliah {
+    overflow-x: auto;
+}
+
+#mata-kuliah table {
+    width: 100%;
+    margin-top: 22px;
+    border-collapse: collapse;
+}
+
+#mata-kuliah th {
+    padding: 15px 18px;
+    text-align: left;
+    background-color: #eff6ff;
+    color: #1e3a8a;
+    font-size: 0.95rem;
+}
+
+#mata-kuliah th:first-child,
+#mata-kuliah th:last-child,
+#mata-kuliah td:first-child,
+#mata-kuliah td:last-child {
+    text-align: center;
+}
+
+#mata-kuliah td {
+    padding: 15px 18px;
+    border-bottom: 1px solid #e5eaf0;
+    color: #52606d;
+}
+
+#mata-kuliah tbody tr:last-child td {
+    border-bottom: none;
+}
+
+#mata-kuliah tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Footer */
+footer {
+    padding: 28px 20px;
+    text-align: center;
+    color: #7b8794;
+    font-size: 0.9rem;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    header nav {
+        padding: 0 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+    }
+
+    main {
+        padding: 30px 20px;
+    }
+
+    section,
+    #tentang-saya {
+        padding: 28px;
+    }
+
+    .profil {
+        gap: 28px;
+    }
+
+    .profil img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .profil-info h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* HP */
+@media (max-width: 600px) {
+    html {
+    scroll-padding-top: 120px;
+    }
+    
+    header nav {
+        flex-direction: column;
+        gap: 12px;
+        padding: 18px 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 18px;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    section,
+    #tentang-saya {
+        padding: 22px;
+        border-radius: 12px;
+    }
+
+    .profil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profil img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .profil-info h1 {
+        font-size: 1.65rem;
+    }
+
+    .profil-info p {
+        text-align: left;
+    }
+
+    .pendidikan-list {
+        grid-template-columns: 1fr;
+    }
+
+    .biodata-list p {
+        grid-template-columns: 90px 1fr;
+        padding: 10px 14px;
+        font-size: 0.9rem;
+    }
+
+    #mata-kuliah {
+        overflow-x: auto;
+    }
+
+    #mata-kuliah table {
+        min-width: 650px;
+    }
+}
