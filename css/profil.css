@@ -117,6 +117,51 @@ section h2 {
     max-width: 650px;
 }
 
+.linkedin-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 10px 16px;
+    margin-top: 16px;
+    border: 1px solid #dbe2ea;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.linkedin-link svg {
+    width: 24px;
+    height: 24px;
+}
+
+.linkedin-link .linkedin-bg {
+    fill: #2563eb;
+}
+
+.linkedin-link .linkedin-icon {
+    fill: #ffffff;
+}
+
+.linkedin-link:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.linkedin-link:hover .linkedin-bg {
+    fill: #ffffff;
+}
+
+.linkedin-link:hover .linkedin-icon {
+    fill: #2563eb;
+}
+
 /* Biodata */
 .biodata-list {
     margin-top: 22px;

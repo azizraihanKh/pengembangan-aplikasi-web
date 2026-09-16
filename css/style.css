@@ -35,10 +35,11 @@ header nav {
     justify-content: space-between;
 }
 
-header nav > p {
+header nav > a {
     font-size: 1.25rem;
     font-weight: 700;
     color: #2563eb;
+    text-decoration: none;
 }
 
 nav ul {
